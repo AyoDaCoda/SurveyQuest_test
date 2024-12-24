@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.login-container, .signup-container,.survey-page, .confirm-page, .denied-page {
+    width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+h1,h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input:focus{
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover  {
+    background-color: #0056b3;
+}
+
+.no-account, .have-account {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.no-account:hover, .have-account:hover {
+    text-decoration: underline;
+}
+
+.survey-page, .confirm-page, .denied-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.survey-page div, .confirm-page div, .denied-page div{
+    border: 2px solid lightgray;
+    border-radius: 7px;
+    width: 100%;
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.survey-page p, .confirm-page p, .denied-page p{
+    margin: .5em;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+@media only screen and (min-width:768px) {
+    body{
+        font-size:larger;
+    }
+    .login-container, .signup-container,.survey-page, .confirm-page, .denied-page{
+        width: 70%;
+        padding: 80px;
+    }
+    input{
+        margin-bottom: 1.2em;
+    }
+    button{
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    body{
+        font-size: 1.9em;
+    }
+    h1, h2{
+        font-size: 2.5em;
+    }
+    .login-container, .signup-container,.survey-page, .confirm-page, .denied-page{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width:2560px) {
+    body{
+        font-size: 4em;
+    }
+    .login-container, .signup-container,.survey-page, .confirm-page, .denied-page{
+        width: 70%;
+        padding: 180px;
+    }
+}

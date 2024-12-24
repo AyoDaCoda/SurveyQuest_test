@@ -1,0 +1,124 @@
+
+
+<!-- NOTE! You are allowed to use the help of another 
+ developer you know. Just ensure to add his/her name to 
+ the google docs documentation for reference along with
+ their phone number -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <!-- Login div -->
+  <div class="login-container">
+    <h1>Login</h1>
+    <form>
+      <label for="email">Email</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+      
+      <label for="password">Password</label>
+      <input type="password"n ame="password" placeholder="Enter your password" required>
+      
+      <!-- Login button -->
+      <button type="submit" id="login">Log In</button>
+
+      <!-- When clicked, go to sign up -->
+      <a href="#" class="no-account">Don't have account?</a>
+    </form>
+  </div>
+
+
+
+  <!-- Sign Up div -->
+  <div class="signup-container hide">
+    <h1>Sign Up</h1>
+    <form>
+    <label for="firstname">First name</label>
+      <input type="text" name="firstname" placeholder="Enter your first name" required>
+
+      <label for="last name">Last name</label>
+      <input type="text" name="lastname" placeholder="Enter your last name" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+
+      <label for="password">Password</label>
+      <input type="password" name="password" placeholder="Enter your password" required>
+      
+      <label for="password">Confirm Password</label>
+      <input type="password" name="confirmpassword" placeholder="Confirm password" required>
+      
+      <!-- Sign Up button -->
+      <button type="submit" id="signup">Sign Up</button>
+
+      <!-- When clicked, go to log in -->
+      <a href="#" class="have-account">Already have an account?</a>
+    </form>
+  </div>
+
+
+
+  <!-- Survey page div -->
+  <div class="survey-page hide">
+    <a href="#" id="back" style="position: absolute; left: 10px; top: 10px; text-decoration: none; color: red;">Back</a>
+    <h2>Survey on Retail</h2>
+
+    <!-- Make it name of the user -->
+    <p style="color: blue;">Ayomide Aboderin</p>
+    <p>0 coins</p>
+    <p>Click the link below to start survey</p>
+
+    <!-- For now, when clicked, goes to confirm page -->
+     <!-- can change the href to that of the form when implementing -->
+    <div><a href="#" id="link">https://forms.gle/PDxMSEDPszZNLPvY7</a></div>
+  </div>
+
+
+  <!-- Confirm page - if and only if the response came out honest and is not repeated -->
+  <div class="confirm-page hide">
+    <h2>Congratulations</h2>
+    <p>You earned 10 coins!</p>
+
+    <!-- Make it name of the user -->
+    <p style="color: blue;">Ayomide Aboderin</p>
+    <p>10 coins</p>
+
+    <!-- Back to survey page -->
+    <button class="next">Continue</button>
+  </div>
+
+
+
+
+  <!-- Denied div - if the response came out dishonest after evaluation -->
+  <div class="denied-page hide">
+    <h2>Oops!</h2>
+    <p style="text-align: justify;">Our AI detected some dishonesty in your response, the reward therefore cannot be processed</p>
+
+    <!-- Male this name of the user -->
+    <p style="color: blue;">Ayomide Aboderin</p>
+    <p>0 coins</p>
+
+    <!-- Back to survey page -->
+    <button class="next">Continue</button>
+  </div>
+
+
+  <!-- Link to external js file -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- Thank you for your help so much! really grateful
+ for helping me make this a reality -->
